@@ -1,0 +1,93 @@
+.game_board_container {
+    position: relative;
+  }
+  
+  .number_conatiner {
+    display: flex;
+    flex-direction: column;
+    background-color: #bbada0;
+    border-radius: 4px;
+    padding: 0.5rem;
+    .number_row {
+      display: flex;
+      justify-content: space-evenly;
+      // align-content: space-around;
+      .single_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 3px;
+        text-align: center;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        color: white;
+        font-size: 2rem;
+        font-weight: 900;
+        background-color: #cdc0b5;
+        flex-grow: 1;
+        height: 93px;
+        width: 93px;
+      }
+      .single_block:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+    .number_row:nth-child(4n) .single_block {
+      margin-bottom: 0;
+    }
+    .b2 {
+      background-color: #ebdcd0 !important;
+      transition: all 500ms;
+      color: #776e65 !important;
+    }
+    .b4 {
+      background-color: #e9dbba !important;
+      transition: all 500ms;
+      color: #776e65 !important;
+    }
+    .b8 {
+      background-color: #e9a067 !important;
+      transition: all 500ms;
+    }
+    .b16 {
+      background-color: #f08151 !important;
+      transition: all 500ms;
+    }
+    .b32 {
+      background-color: #f2654f !important;
+      transition: all 500ms;
+    }
+    .b64 {
+      background-color: #f1462c !important;
+      transition: all 500ms;
+    }
+    .b128 {
+      background-color: #e7c65e !important;
+      transition: all 500ms;
+    }
+    .b256 {
+      background-color: #e8c350 !important;
+      transition: all 500ms;
+    }
+    .b512 {
+      background-color: #e8be40 !important;
+      transition: all 500ms;
+    }
+    .b1024 {
+      background-color: #e8bb31 !important;
+      transition: all 500ms;
+    }
+    .b2048 {
+      background-color: #e7b723 !important;
+      transition: all 500ms;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .number_conatiner {
+      .single_block {
+        height: 55px !important;
+      }
+    }
+  }
